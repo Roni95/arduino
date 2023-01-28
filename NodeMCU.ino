@@ -52,7 +52,7 @@ void loop() {
       Serial.println(jsonParams); 
       http.begin(wifiClient, "http://manhole.test71.xyz/api/manhole/1");
       http.addHeader("Content-Type", "application/json");
-      //int result = http.PUT(jsonParams);
+      int result = http.PUT(jsonParams);
       //response = http.getString();
       //Serial.println(response);
       http.end();
@@ -69,7 +69,7 @@ void loop() {
       Serial.println(jsonParams); 
       http.begin(wifiClient, "http://manhole.test71.xyz/api/manhole/1");
       http.addHeader("Content-Type", "application/json");
-      //int result = http.PUT(jsonParams);
+      int result = http.PUT(jsonParams);
       //response = http.getString();
       //Serial.println(response);
       http.end();
